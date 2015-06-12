@@ -7,4 +7,5 @@
  * @version     2.0.0
  */
 ?>
+<style> ul.products {float:right; position: relative;} </style>
 <ul class="products">

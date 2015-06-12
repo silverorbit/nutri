@@ -1,0 +1,25 @@
+.wooproduct {
+    width: 200px;
+    text-align: center;
+    float: right;
+    border: solid 1px #CCC;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.wooproduct .product_title {
+  margin: 5px 0 0 0;
+  line-height: 1em;
+}
+.wooproduct .price {
+  font-size: 1em;
+  line-height: 1em;
+}
+.wooproduct .button {
+  margin: 5px auto;
+  font-size: 0.8em;
+}
+.wooproduct .star-rating {
+  width: 5.4em;
+  margin: 0 auto;
+}

@@ -35,17 +35,7 @@
                 </div><!-- footer-column --><div class="clear"></div>
             </div><!-- middle-align -->
         </div><!-- footer-top -->
-        <div class="footer-bottom">
-        		<div class="footer-inner middle-align">
-                		<div class="footer-bottom-left">
-                            <?php wp_nav_menu( array('theme_location'	=> 'footer') ); ?>
-                            <?php if( of_get_option('copytext',true) != 1) { echo esc_html(of_get_option('copytext', true)); } else { _e(' Copyright 2014 All Rights Reserved to Nature One ','nature-one'); } ; ?>
-                         </div><!-- footer-bottom-left -->
-                         <div class="footer-bottom-right">
-                         	<a href="<?php echo esc_url(SKT_URL); ?>"><?php _e('Professional WordPress Themes','nature-one'); ?>.</a>
-                         </div><!-- footer-bottom-right --><div class="clear"></div>
-                </div><!-- footer-inner -->
-         </div><!-- footer-bottom -->
+       
 </div><!-- footer -->
         </div><!-- main-container -->
   

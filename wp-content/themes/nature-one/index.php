@@ -1,3 +1,10 @@
+
+
+
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="js/uiblock.js" ></script>
+
 <?php
 /**
  * The template for displaying home page.
@@ -9,8 +16,8 @@
  *
  * @package SKT Nature One
  */
-
 get_header(); 
+
 ?>
 
 <?php if ( 'page' == get_option( 'show_on_front' ) && ( '' != get_option( 'page_for_posts' ) ) && $wp_query->get_queried_object_id() == get_option( 'page_for_posts' ) ) : ?>
@@ -28,11 +35,11 @@ get_header();
                          * (where ___ is the post format) and that will be used instead.
                          */
                         get_template_part( 'content', get_post_format() );
-                
+                        
                     endwhile;
                     // Previous/next post navigation.
                     skt_natureone_pagination();
-                
+                    
                 else :
                     // If no content, include the "No posts found" template.
                      get_template_part( 'no-results', 'index' );
@@ -45,169 +52,132 @@ get_header();
         </div>
     </div>
 
-
-<?php else: ?>
-    
-            <section style="background-color:#d0c90b;">
-                    <div class="welcome-box middle-align">
-                        	<div class="features-section">
-                            	<?php if( of_get_option('boxfirst',true) == 1 ) { ?>
-                                	<?php for($k=1;$k<5;$k++) { ?>
-                        				<div class="feature-box">
-                                        		<h5><?php _e('Dummy Title','nature-one'); ?></h5>
-                                                <p><?php _e('Go to Appearance >> Theme Options >> Homepage Content.','nature-one'); ?></p>
-                                        </div><!-- feature-box -->
-                                        <?php } ?>
-                        		<?php } else { ?>
-                            		<?php if( of_get_option('boxfirst',false)) { ?>
-                                    		<div class="feature-box">
-                                            	<?php $boxfirst = new WP_Query('page_id='.of_get_option('boxfirst'));
-														while($boxfirst->have_posts()) : $boxfirst->the_post(); ?>
-                                                        	<?php if( has_post_thumbnail()) { ?>
-                                                                <div class="feat-image"><?php the_post_thumbnail( array(85,85) ); ?></div><!-- feat-image -->
-                                                            <?php } ?>
-                                                            <h5><?php the_title(); ?></h5>
-                                                            	<?php if( has_post_thumbnail() ) { ?>
-                                                            		<?php echo skt_natureone_content(15); ?>
-                                                                <?php } else { ?>
-                                                                	<?php echo skt_natureone_content(32); ?>
-                                                                <?php } ?>
-                                                                <a href="<?php esc_url(the_permalink()); ?>"><?php _e('Read More','nature-one'); ?></a>
-                                                        <?php endwhile; ?>
-                                            </div><!-- box-first -->
-                                    <?php } ?>
-                            </div><!-- feature-section -->
-                            <div class="features-section">
-                            		<?php if( of_get_option('boxsecond',false)) { ?>
-                                    		<div class="feature-box">
-                                            	<?php $boxfirst = new WP_Query('page_id='.of_get_option('boxsecond'));
-														while($boxfirst->have_posts()) : $boxfirst->the_post(); ?>
-                                                        	<?php if( has_post_thumbnail()) { ?>
-                                                                <div class="feat-image"><?php the_post_thumbnail( array(85,85) ); ?></div><!-- feat-image -->
-                                                            <?php } ?>
-                                                            <h5><?php the_title(); ?></h5>
-                                                            	<?php if( has_post_thumbnail() ) { ?>
-                                                            		<?php echo skt_natureone_content(15); ?>
-                                                                <?php } else { ?>
-                                                                	<?php echo skt_natureone_content(32); ?>
-                                                                <?php } ?>
-                                                                <a href="<?php esc_url(the_permalink()); ?>">><?php _e('Read More','nature-one'); ?></a>
-                                                        <?php endwhile; ?>
-                                            </div><!-- box-first -->
-                                    <?php } ?>
-                            </div><!-- feature-section -->
-                            <div class="features-section">
-                            		<?php if( of_get_option('boxthird',false)) { ?>
-                                    		<div class="feature-box">
-                                            	<?php $boxfirst = new WP_Query('page_id='.of_get_option('boxthird'));
-														while($boxfirst->have_posts()) : $boxfirst->the_post(); ?>
-                                                        	<?php if( has_post_thumbnail()) { ?>
-                                                                <div class="feat-image"><?php the_post_thumbnail( array(85,85) ); ?></div><!-- feat-image -->
-                                                            <?php } ?>
-                                                            <h5><?php the_title(); ?></h5>
-                                                            	<?php if( has_post_thumbnail() ) { ?>
-                                                            		<?php echo skt_natureone_content(15); ?>
-                                                                <?php } else { ?>
-                                                                	<?php echo skt_natureone_content(32); ?>
-                                                                <?php } ?>
-                                                                <a href="<?php esc_url(the_permalink()); ?>">><?php _e('Read More','nature-one'); ?></a>
-                                                        <?php endwhile; ?>
-                                            </div><!-- box-first -->
-                                    <?php } ?>
-                            </div><!-- feature-section -->
-                            <div class="features-section">
-                            		<?php if( of_get_option('boxfourth',false)) { ?>
-                                    		<div class="feature-box">
-                                            	<?php $boxfirst = new WP_Query('page_id='.of_get_option('boxfourth'));
-														while($boxfirst->have_posts()) : $boxfirst->the_post(); ?>
-                                                        	<?php if( has_post_thumbnail()) { ?>
-                                                                <div class="feat-image"><?php the_post_thumbnail( array(85,85) ); ?></div><!-- feat-image -->
-                                                            <?php } ?>
-                                                            <h5><?php the_title(); ?></h5>
-                                                            	<?php if( has_post_thumbnail() ) { ?>
-                                                            		<?php echo skt_natureone_content(15); ?>
-                                                                <?php } else { ?>
-                                                                	<?php echo skt_natureone_content(32); ?>
-                                                                <?php } ?>
-                                                                <a href="<?php esc_url(the_permalink()); ?>">><?php _e('Read More','nature-one'); ?></a>
-                                                        <?php endwhile; ?>
-                                            </div><!-- box-first -->
-                                    <?php } } ?>
-                            </div><!-- feature-section --><div class="clear"></div>
-                     </div><!-- middle-align --><div class="clear"></div>
-            </section><div class="clear"></div>
-           
-            <section style="background-color:#303030;">
-            		<div class="awesome-bg middle-align">
-                    	<?php if( of_get_option('recenttitle',true) != 1){ ?><h2><span><?php echo of_get_option('recenttitle',true); ?></span></h2><?php } else { ?><h2><span><?php _e('Recent Work','nature-one'); ?></span></h2><?php } ?>
-                        <?php if( of_get_option('recentfirst',true) == 1) { ?>
-                        	<?php for($n=1; $n<4;$n++) { ?>
-                        		<div class="work-thumb">
-                                            <a href="#"><img width="262px" height="189px" alt="Dummy Title" src="<?php echo get_template_directory_uri();?>/images/flower-thum.jpg" class="example-image"></a><a data-lightbox="example-1" href="<?php echo get_template_directory_uri();?>/images/flower-thum.jpg" class="example-image-link"><img src="<?php echo get_template_directory_uri(); ?>/images/zoom-icon.png"></a>
-                                       </div><!-- work-thumb -->
-                       	<?php } } else { ?>
-							<?php 
-                                if( of_get_option('recentfirst',false)) { 
-                                $recent = new WP_Query('page_id='.of_get_option('recentfirst'));  
-                                    while($recent->have_posts() ) : $recent->the_post(); ?>
-                                        <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large', true );
-                                              $url = $thumb['0']; ?>
-                                        <div class="work-thumb">
-                                            <a href="<?php the_permalink(); ?>"><img width="262px" height="189px" alt="<?php the_title(); ?>" src="<?php echo $url; ?>" class="example-image"></a><a data-lightbox="example-1" href="<?php echo $url; ?>" class="example-image-link"><img src="<?php echo get_template_directory_uri(); ?>/images/zoom-icon.png"></a>
-                                       </div><!-- work-thumb -->
-                                <?php	endwhile;
-							}
-						?>
-                        <?php 
-                                if( of_get_option('recentsecond',false)) { 
-                                $recent = new WP_Query('page_id='.of_get_option('recentsecond'));  
-                                    while($recent->have_posts() ) : $recent->the_post(); ?>
-                                        <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large', true );
-                                              $url = $thumb['0']; ?>
-                                        <div class="work-thumb">
-                                            <a href="<?php the_permalink(); ?>"><img width="262px" height="189px" alt="<?php the_title(); ?>" src="<?php echo $url; ?>" class="example-image"></a><a data-lightbox="example-1" href="<?php echo $url; ?>" class="example-image-link"><img src="<?php echo get_template_directory_uri(); ?>/images/zoom-icon.png"></a>
-                                       </div><!-- work-thumb -->
-                                <?php	endwhile;
-							}
-						?>
-                        <?php 
-                                if( of_get_option('recentthird',false)) { 
-                                $recent = new WP_Query('page_id='.of_get_option('recentthird'));  
-                                    while($recent->have_posts() ) : $recent->the_post(); ?>
-                                        <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large', true );
-                                              $url = $thumb['0']; ?>
-                                        <div class="work-thumb">
-                                            <a href="<?php the_permalink(); ?>"><img width="262px" height="189px" alt="<?php the_title(); ?>" src="<?php echo $url; ?>" class="example-image"></a><a data-lightbox="example-1" href="<?php echo $url; ?>" class="example-image-link"><img src="<?php echo get_template_directory_uri(); ?>/images/zoom-icon.png"></a>
-                                       </div><!-- work-thumb --><div class="clear"></div>
-                                <?php	endwhile;
-							}
-						}
-						?>
-                    </div><!-- awesome-bg --><div class="clear"></div>
-            </section><!-- section2 -->
-            <section class="menu_page">
-            	<div class="middle-align">
-                	<?php $blogpost = new WP_Query('showposts='.of_get_option('blogdisplay')); ?>
-                	<?php $j = 0; ?>
-                	<?php if( of_get_option('bloghead',true) != 1) { ?><h2><span><?php echo of_get_option('bloghead',true); ?></span></h2><?php } else { ?><h2><span><?php _e('Whats New?','nature-one'); ?></span></h2> <?php } ?>
-                		<?php if( $blogpost->have_posts() ) : while( $blogpost->have_posts() ) : $blogpost->the_post(); ?>
-                        	<?php $j++; ?>
-                        		<div class="blog-box" <?php if($j%2==0) {?> style="float:right" <?php } ?>>
-                                		<div class="blog-meta"><?php echo get_the_time('j'); ?><br /><?php echo date('M'); ?></div><!-- blog-meta -->
-                                        <div class="blog-right"><h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                        						<?php echo skt_natureone_content(25); ?>
-                                                                <a href="<?php esc_url(the_permalink()); ?>"><?php _e('Read More...','nature-one'); ?></a>
-                                        </div><!-- blog-right -->
-                                </div><!-- blog-box --><?php if($j%2==0) { ?><div class="clear"></div><?php } ?>
-                        <?php  endwhile; else : endif; ?><div class="clear"></div>
-                </div><!-- middle-align -->
-            </section>
-            		
 <?php endif; ?>
-<?php get_footer(); ?>
 
+
+<?php
+
+?>
+
+
+<?php // get_footer(); ?>
+<style> 
+    
+   .foot{
+
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px !important;
+    }
+
+</style>
+
+ <div id="footer">
+ 		<div class="footer-top">
+        	<div class="middle-align">
+            	<div class="footer-column">
+                    <div class="foot" style="display:block;"> Our Story </div>
+                    <div  class="foot"> About Us </div>
+                     <div  class="foot"> Comments and Suggestion </div>
+                	</div><!-- footer-column -->
+                <div class="footer-column" style="margin-right:0;">
+                    <div class="foot"> Contact Us </div>
+                	<div class="foot"> Shipping and Returns </div>
+                    <div class="foot"> FAQs </div>
+                </div><!-- footer-column --><div class="clear"></div>
+            </div><!-- middle-align -->
+        </div><!-- footer-top --> 
+</div><!-- footer -->
+      
     <style>    
         .add_to_cart_inline span, .add_to_cart_inline small {display:none}
 
         .product.woocommerce .amount {display:none}
      </style>
+
+  <div class="product" id="load_content_overlay" style="position:relative; z-index: 5000; visibility:hidden; height: 120%; width: 30%;"> 
+                  <style>
+
+                            ul.products{float: left !important; width: 70% !important; top: 90px; left: 90px;  };
+                            li.products{left: 70px;};
+                     </style>
+                <table  width="2000px"> 
+                    <tr  >
+                        <td width="30%" style="float:right; text-align: right;";>
+                        <div class="nav menu" style="font-size: 20px; padding-right:120px; padding-bottom:10px;">
+                         <a href="#"> Shakes </a>
+                        </div>
+                        <div class="nav menu" style="font-size: 20px;">
+                         <a href="#"> Progressive Nutrition </a>
+                        </div>
+                        </td>
+
+                       <td width="70%"; style="font-size: 14px !important; text-align: center;  ">
+                      
+                                      
+                        
+                        <?php
+                            
+                          //  echo do_shortcode('[woocommerce_products_carousel_all_in_one template="compact.css" all_items="10" show_only="newest" ordering="asc" categories="" show_title="true" show_tags="false" show_price="true" show_description="true" show_add_to_cart_button="true" show_more_button="true" show_more_items_button="true" image_source="thumbnail" image_height="100" image_width="100" items_to_show="4" slide_by="1" margin="5" loop="true" auto_play="true" stop_on_hover="true" auto_play_timeout="1200" nav="true" nav_speed="800" dots="true" dots_speed="800" lazy_load="false" mouse_drag="true" mouse_wheel="true" touch_drag="true" easing="linear"]');
+                        
+                          //  echo    do_shortcode('[wooproduct ID="4"]');
+                             echo    do_shortcode('[products ids="9,12,16"]');
+                             
+                        ?>
+                        
+                        </td>
+                      </tr>     
+                </table>
+    </div>
+
+<script type="text/javascript">
+    
+    $(document).ready(function() { 
+
+    $.blockUI.defaults.css.cursor = 'default';
+    $.blockUI.defaults.overlayCSS.cursor = 'default';
+    $.blockUI.defaults.bindEvents = 'false';
+     $.blockUI.defaults.css.width = "90%";
+     $.blockUI.defaults.css.height = "75%";
+      $.blockUI.defaults.css.left = "30%";
+    $.blockUI.defaults.css.border = 'none'; 
+    $.blockUI.defaults.css.backgroundColor = "none";
+  
+        
+        $('#menu-item-37').click(function() { 
+             $("#load_content_overlay").css("visibility","visible");
+           // $.blockUI({ message: $('#load_content_overlay')  ,css:{visibility: 'visible'}});
+             $('#int-div').block({ message:  $('#load_content_overlay')  }); 
+
+            return false;
+
+            
+        }); 
+    
+    /*
+        $('.page-item-14').click(function() { 
+        
+            $('#int-div').block({ message: null }); 
+            return false;
+
+        }); 
+    */
+
+        $('#menu-item-37').click(function() { 
+            $('.site-main').block({ 
+                message: '<h1>Processing</h1>', 
+                css: { border: '3px solid #a00' } 
+            }); 
+        }); 
+ 
+        $('#unblockButton').click(function() { 
+            $('#content-area').unblock(); 
+        }); 
+ 
+        $('a.test').click(function() { 
+            alert('link clicked'); 
+            return false; 
+        }); 
+    }); 
+
+</script>

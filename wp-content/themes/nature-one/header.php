@@ -19,10 +19,11 @@
 <body <?php body_class(); ?>>
 
 <?php if ( (of_get_option('innerpageslider', true) != 'hide') || is_home() || is_front_page() ) { ?>
-    <div class="slider-wrapper">
+    <div class="slider-wrapper" style="position:relative; z-index: 1;">
+    <div id="int-div" style="position:relative; z-index: 5; "> 
            <?php
 		   	if ( of_get_option('slide1', true) == 1 ){ ?>
-            		<div id="slider" class="nivoSlider">
+            		<div id="slider" class="nivoSlider" >
                     		<img src="<?php echo get_template_directory_uri(); ?>/images/slides/slider1.jpg" />
 					</div>
                     <div id="slidecaption1" class="nivo-html-caption" style="display:block;">
@@ -54,13 +55,19 @@
 			if( $slAr > 0 ){
 				$n = 0;?>
                 <div id="slider" class="nivoSlider">
+                   
                 <?php 
+
                 foreach( $slAr as $sv ){
                     $n++; ?><img src="<?php echo esc_url($sv['image_src']); ?>" alt="<?php echo esc_attr($sv['image_title']);?>" title="<?php if ( ($sv['image_title']!='') && ($sv['image_desc']!='') ) { echo esc_attr('#slidecaption'.$n) ; } ?>"/><?php
                     $slideno[] = $n;
                 }
+
                 ?>
-                </div><?php
+                </div>
+
+                <?php
+                
                 foreach( $slideno as $sln ){ ?>
                     <div id="slidecaption<?php echo $sln; ?>" class="nivo-html-caption">
                     <div class="slide_info">
@@ -71,13 +78,24 @@
                             <p><?php echo esc_html(of_get_option('slidedesc'.$sln, true)); ?></p>
                         <?php } ?>
                     </div>
-                    </div><?php 
-                } ?>
+
+                    </div>
+
+                    <?php 
+                } 
+
+                ?>
+              
                 </div>
-                <div class="clear"></div><?php 
+
+                <div class="clear"></div>
+ 
+                <?php 
 			}
             ?>
-        </div>
+
+            </div> <!--endof int-div-->
+        </div> <!-- end of slider wrapper -->
    
 <?php } }  else { ?>
 						<div id="slider-page">
@@ -131,4 +149,5 @@
 		 	<div class="content-area">
                 <div class="middle-align content_sidebar">
                 	<div id="sitemain" class="site-main">
+                  
          <?php } ?>

@@ -1,0 +1,737 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Page Scroll 1.1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-31 14:51+0800\n"
+"PO-Revision-Date: 2015-05-31 14:51+0800\n"
+"Last-Translator: HooThemes <support@hoosoft.com>\n"
+"Language-Team: HooThemes <support@hoosoft.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0:one-page-scroll"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:28
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:45
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: admin/includes/class-options-framework-admin.php:91
+#: admin/includes/class-options-framework-admin.php:92
+#: functions.php:12
+#: functions.php:13
+msgid "Theme Options"
+msgstr ""
+
+#: admin/includes/class-options-framework-admin.php:204
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: admin/includes/class-options-framework-admin.php:236
+msgid "Default options restored."
+msgstr ""
+
+#: admin/includes/class-options-framework-admin.php:290
+msgid "Options saved."
+msgstr ""
+
+#: admin/includes/class-options-media-uploader.php:62
+msgid "No file chosen"
+msgstr ""
+
+#: admin/includes/class-options-media-uploader.php:65
+#: admin/includes/class-options-media-uploader.php:118
+msgid "Upload"
+msgstr ""
+
+#: admin/includes/class-options-media-uploader.php:67
+#: admin/includes/class-options-media-uploader.php:119
+msgid "Remove"
+msgstr ""
+
+#: admin/includes/class-options-media-uploader.php:70
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: admin/includes/class-options-media-uploader.php:94
+msgid "View File"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:330
+msgid "No Repeat"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:331
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:332
+msgid "Repeat Vertically"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:333
+msgid "Repeat All"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:345
+msgid "Top Left"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:346
+msgid "Top Center"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:347
+msgid "Top Right"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:348
+msgid "Middle Left"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:349
+msgid "Middle Center"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:350
+msgid "Middle Right"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:351
+msgid "Bottom Left"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:352
+msgid "Bottom Center"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:353
+msgid "Bottom Right"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:365
+msgid "Scroll Normally"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:366
+msgid "Fixed in Place"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:438
+msgid "Normal"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:439
+msgid "Italic"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:440
+msgid "Bold"
+msgstr ""
+
+#: admin/includes/class-options-sanitization.php:441
+msgid "Bold Italic"
+msgstr ""
+
+#: archive.php:35
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: archive.php:38
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: archive.php:41
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: archive.php:44
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: archive.php:47
+msgid "Asides"
+msgstr ""
+
+#: archive.php:50
+msgid "Galleries"
+msgstr ""
+
+#: archive.php:53
+msgid "Images"
+msgstr ""
+
+#: archive.php:56
+msgid "Videos"
+msgstr ""
+
+#: archive.php:59
+msgid "Quotes"
+msgstr ""
+
+#: archive.php:62
+msgid "Links"
+msgstr ""
+
+#: archive.php:65
+msgid "Statuses"
+msgstr ""
+
+#: archive.php:68
+msgid "Audios"
+msgstr ""
+
+#: archive.php:71
+msgid "Chats"
+msgstr ""
+
+#: archive.php:74
+#: inc/breadcrumbs.php:299
+msgid "Archives"
+msgstr ""
+
+#: blog-header.php:4
+#: header-page.php:30
+msgid "Toggle navigation"
+msgstr ""
+
+#: comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:11
+msgid "No comment"
+msgstr ""
+
+#: comments.php:11
+msgid "Has one comment"
+msgstr ""
+
+#: comments.php:11
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: comments.php:11
+#, php-format
+msgid "to &#8220;%s&#8221;"
+msgstr ""
+
+#: comments.php:12
+msgid "You can "
+msgstr ""
+
+#: comments.php:12
+msgid "leave a reply"
+msgstr ""
+
+#: comments.php:12
+msgid " or "
+msgstr ""
+
+#: comments.php:12
+msgid "Trackback"
+msgstr ""
+
+#: comments.php:12
+msgid "this post."
+msgstr ""
+
+#: comments.php:24
+msgid "Comment pages"
+msgstr ""
+
+#: comments.php:54
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:61
+#: comments.php:79
+msgid "Name"
+msgstr ""
+
+#: comments.php:62
+#: comments.php:83
+msgid "Email"
+msgstr ""
+
+#: comments.php:63
+#: comments.php:87
+msgid "Website"
+msgstr ""
+
+#: comments.php:67
+msgid "Your email address will not be published."
+msgstr ""
+
+#: comments.php:70
+msgid "Write a Reply or Comment"
+msgstr ""
+
+#: comments.php:75
+msgid "Message"
+msgstr ""
+
+#: content-featured.php:164
+#: footer-page.php:17
+#: sidebar-blog.php:53
+#: sidebar.php:53
+#, php-format
+msgid ""
+"Powered by <a href=\"%s\">WordPress</a>. Designed by <a href=\"%s"
+"\">HooThemes</a>."
+msgstr ""
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:19
+#: inc/breadcrumbs.php:1797
+#: inc/breadcrumbs.php:1849
+#: inc/breadcrumbs.php:1873
+#: inc/breadcrumbs.php:1917
+#: inc/template-tags.php:122
+msgid "Edit"
+msgstr ""
+
+#: functions.php:46
+msgid "Featured Homepage Sidebar Menu ( Affected on Featured Homepage )"
+msgstr ""
+
+#: functions.php:50
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:93
+msgid "Default Blog Sidebar"
+msgstr ""
+
+#: functions.php:94
+msgid "Default blog sidebar, display when Blog Sidebar is not been activated."
+msgstr ""
+
+#: functions.php:103
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/breadcrumbs.php:293
+msgid "Browse:"
+msgstr ""
+
+#: inc/breadcrumbs.php:295
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumbs.php:297
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/breadcrumbs.php:303
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/breadcrumbs.php:307
+#: inc/extras.php:28
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:311
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:315
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumbs.php:1837
+msgid "Split"
+msgstr ""
+
+#: inc/breadcrumbs.php:1843
+msgid "Merge"
+msgstr ""
+
+#: inc/extras.php:60
+msgid "Page: "
+msgstr ""
+
+#: inc/extras.php:120
+#, php-format
+msgid "<cite> %s </cite><span class=\"says\">says:</span>"
+msgstr ""
+
+#: inc/extras.php:122
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/extras.php:123
+msgid "(Edit)"
+msgstr ""
+
+#: inc/extras.php:129
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/extras.php:149
+msgid "Untitled"
+msgstr ""
+
+#: inc/extras.php:167
+msgid "Quick Links"
+msgstr ""
+
+#: inc/extras.php:170
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/extras.php:171
+msgid "Tutorials"
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:46
+msgid "Post navigation"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:104
+#: inc/template-tags.php:110
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:106
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:112
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:118
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:118
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:118
+msgid "% Comments"
+msgstr ""
+
+#: options.php:65
+msgid "Basic Settings"
+msgstr ""
+
+#: options.php:69
+msgid "Upload Logo"
+msgstr ""
+
+#: options.php:75
+msgid "Favicon"
+msgstr ""
+
+#: options.php:76
+#, php-format
+msgid ""
+"An icon associated with a URL that is variously displayed, as in a browser's "
+"address bar or next to the site name in a bookmark list. Learn more about <a "
+"href=\"%s\" target=\"_blank\">Favicon</a>"
+msgstr ""
+
+#: options.php:83
+msgid "Custom CSS"
+msgstr ""
+
+#: options.php:84
+msgid ""
+"The following css code will add to the header before the closing &lt;/"
+"head&gt; tag."
+msgstr ""
+
+#: options.php:91
+msgid "Home Page"
+msgstr ""
+
+#: options.php:95
+msgid "Enable Featured Homepage"
+msgstr ""
+
+#: options.php:96
+#, php-format
+msgid ""
+"Active featured homepage Layout.  The standardized way of creating Static "
+"Front Pages: <a href=\"%s\" target=\"_blank\">Creating a Static Front Page</"
+"a>"
+msgstr ""
+
+#: options.php:103
+msgid "HTML5 Video Background Options"
+msgstr ""
+
+#: options.php:104
+msgid "mp4 video url"
+msgstr ""
+
+#: options.php:104
+msgid "For Android devices, Internet Explorer 9, Safari"
+msgstr ""
+
+#: options.php:105
+msgid "ogv video url"
+msgstr ""
+
+#: options.php:105
+#: options.php:106
+msgid "For Google Chrome, Mozilla Firefox, Opera "
+msgstr ""
+
+#: options.php:106
+msgid "webm video url"
+msgstr ""
+
+#: options.php:107
+msgid "poster"
+msgstr ""
+
+#: options.php:107
+msgid ""
+"Displaying the image for browsers that don't support the HTML5 Video element."
+msgstr ""
+
+#: options.php:108
+msgid "Video Loop"
+msgstr ""
+
+#: options.php:109
+msgid "Autoplay"
+msgstr ""
+
+#: options.php:111
+msgid "Video Volume"
+msgstr ""
+
+#: options.php:113
+msgid "No video background"
+msgstr ""
+
+#: options.php:116
+#: options.php:285
+#, php-format
+msgid "Section %d"
+msgstr ""
+
+#: options.php:119
+msgid "Video Background Section"
+msgstr ""
+
+#: options.php:125
+msgid "Home Page Sidebar Menu options"
+msgstr ""
+
+#: options.php:127
+msgid "Sidebar Width"
+msgstr ""
+
+#: options.php:127
+msgid "Use a number without \"px\", default is 280. ex: 280"
+msgstr ""
+
+#: options.php:129
+msgid "Menu Status ( Desktop )"
+msgstr ""
+
+#: options.php:131
+msgid "Menu Status ( Tablet )"
+msgstr ""
+
+#: options.php:133
+msgid "Menu Status ( Mobile )"
+msgstr ""
+
+#: options.php:136
+msgid "</div>"
+msgstr ""
+
+#: options.php:142
+msgid "Number of Sections"
+msgstr ""
+
+#: options.php:143
+msgid "Select number of sections"
+msgstr ""
+
+#: options.php:149
+msgid "Scrolling Delay"
+msgstr ""
+
+#: options.php:287
+msgid "Section ID"
+msgstr ""
+
+#: options.php:287
+msgid ""
+"Add anchor tag to jump to specific section on one page without having any "
+"space or symbol. This section id will be related with the menu link, it "
+"should be call on wp appearance menu by using # after site url. It is "
+"usually all lowercase and contains only letters, numbers, and hyphens."
+msgstr ""
+
+#: options.php:289
+msgid "Section Title"
+msgstr ""
+
+#: options.php:290
+msgid "Section Sub-Title"
+msgstr ""
+
+#: options.php:293
+msgid "Section Title Typography"
+msgstr ""
+
+#: options.php:302
+msgid "Section Sub-Title Typography"
+msgstr ""
+
+#: options.php:312
+msgid "Section Content Typography"
+msgstr ""
+
+#: options.php:321
+msgid "Section Background"
+msgstr ""
+
+#: options.php:323
+msgid "Section Css Class"
+msgstr ""
+
+#: options.php:326
+msgid "Section Content"
+msgstr ""
+
+#: options.php:333
+msgid "Footer"
+msgstr ""
+
+#: options.php:348
+#, php-format
+msgid "Social Icon #%s"
+msgstr ""
+
+#: options.php:349
+#, php-format
+msgid "Social Title #%s"
+msgstr ""
+
+#: options.php:350
+#, php-format
+msgid "Social Link #%s"
+msgstr ""
+
+#: options.php:355
+msgid "Typography"
+msgstr ""
+
+#: options.php:357
+msgid "Content Link Color"
+msgstr ""
+
+#: options.php:358
+msgid "Content Link Mouseover Color"
+msgstr ""
+
+#: options.php:360
+msgid "Page Menu Typography"
+msgstr ""
+
+#: options.php:362
+msgid "Homepage and Pages Menu Typography."
+msgstr ""
+
+#: options.php:370
+msgid "Page Menu Active Color"
+msgstr ""
+
+#: options.php:372
+msgid "Blog Menu Typography"
+msgstr ""
+
+#: options.php:374
+msgid "Blog Menu Typography."
+msgstr ""
+
+#: options.php:383
+msgid "Blog Menu Active Color"
+msgstr ""
+
+#: options.php:385
+msgid "Homepage Side Nav Menu Typography"
+msgstr ""
+
+#: options.php:394
+msgid "Side Nav Menu Active Color"
+msgstr ""
+
+#: options.php:397
+msgid "Pages & Posts Content Typography"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""

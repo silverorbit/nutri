@@ -1,0 +1,27 @@
+
+===== Change Log =====
+
+ Version 1.1.2
+ * Fixed text domain issue
+ * Enqueue jquery-ui-core
+
+ Version 1.1.1
+ * Added HTML5 video background
+ * Improve performance of sidebar menu
+ * Fixed Typography issues
+
+ Version 1.1.0
+ * Added 'css' option field & sanitize custom css code before save to database
+ 
+ Version 1.0.9
+ * Upgrade "Options Framework"
+ 
+ Version 1.0.8
+ * Fixed iframe issue in home page section content
+ 
+ Version 1.0.4
+ * Fixed home page side nav font color issue
+  
+ Version 1.0.3
+ * Fixed Typography option issues
+ * Fixed blog sidebar issue

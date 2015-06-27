@@ -150,6 +150,7 @@ function wc_get_template_part( $slug, $name = '' ) {
 	// Get default slug-name.php
 	if ( ! $template && $name && file_exists( WC()->plugin_path() . "/templates/{$slug}-{$name}.php" ) ) {
 		$template = WC()->plugin_path() . "/templates/{$slug}-{$name}.php";
+		
 	}
 
 	// If template file doesn't exist, look in yourtheme/slug.php and yourtheme/woocommerce/slug.php

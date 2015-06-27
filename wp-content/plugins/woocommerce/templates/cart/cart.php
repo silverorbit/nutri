@@ -1,3 +1,18 @@
+<style>
+	  [name=apply_coupon] {
+  	
+  background-color: #23B34B !important;
+  color: white !important;
+
+  }
+  [name=update_cart] {
+  	
+  background-color: #23B34B !important;
+  color: white !important;
+
+  }
+</style>
+
 <?php
 /**
  * Cart Page
@@ -24,10 +39,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<tr>
 			<th class="product-remove">&nbsp;</th>
 			<th class="product-thumbnail">&nbsp;</th>
-			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
-			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<th class="product-name" style="color:white;" ><?php _e( 'Product', 'woocommerce' ); ?></th>
+			<th class="product-price" style="color:white;" ><?php _e( 'Price', 'woocommerce' ); ?></th>
+			<th class="product-quantity" style="color:white;" ><?php _e( 'Quantity', 'woocommerce' ); ?></th>
+			<th class="product-subtotal" style="color:white;" ><?php _e( 'Total', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>

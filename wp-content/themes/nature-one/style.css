@@ -233,7 +233,7 @@ body.home .fixed, body.blog .fixed{position:fixed !important; top:0 !important; 
 .pagination ul{list-style:none; margin:20px 0;}
 .pagination ul li{display:inline; float:left; margin-right:5px;}
 .pagination ul li span, .pagination ul li a{background:#303441; color:#fff; padding:5px 10px; display:inline-block;}
-h1.entry-title, h1.page-title{padding-bottom:35px; text-align:center; background:url(images/page_title_bg.png) no-repeat bottom center; font:30px 'Oswald',san-serif; color:#ffffff;}
+h1.entry-title, h1.page-title{padding-bottom:35px;  display:block; text-align:center; background:url(images/page_title_bg.png) no-repeat bottom center; font:30px 'Oswald',san-serif; color:#ffffff;}
 .subheading{ font:18px 'Oswald',san-serif; text-align:center; color:#d1cb12; margin-top:5px;}
 article.tag-sticky-2{background:#4d4d4d; padding:10px;}
 article img{height:auto;}

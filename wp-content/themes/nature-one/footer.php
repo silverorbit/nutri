@@ -7,34 +7,54 @@
  * @package SKT Nature One
  */
 ?>
+<style> 
+    
+   .foot{
 
- <div id="footer">
- 		<div class="footer-top">
-        	<div class="middle-align">
-            	<div class="footer-column"><h3><?php _e('About Us','nature-one'); ?></h3>
-                	<?php if( of_get_option('footertext', true) != '') 
-							{ 
-								if(of_get_option('footertext',true) == 1)
-									 { 
-									 	_e('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas ornare elit ut molestie. Phasellus posuere interdum tellus, sit amet interdum lectus rutrum at. Nunc suscipit erat ut eros consequat, at bibendum sapien convallis. Donec ut gravida velit. Curabitur non ultrices lorem. Quisque aliquet leo felis, vitae posuere purus blandit vitae. Fusce vitae tincidunt enim, in efficitur justo. Morbi euismod orci non magna malesuada commodo.','nature-one');
-										}
-										else
-										{
-											echo esc_html(of_get_option('footertext', true));
-										}
-								 }; ?>
-                </div><!-- footer-column -->
-                <div class="footer-column" style="margin-right:0;"><h3><?php _e('Clients Testimonials','nature-one'); ?></h3>
-                	<blockquote>
-                    		<?php if(of_get_option('testtext',true) != 1){ 
-									echo esc_html(of_get_option('testtext', true));
-							} else { ?>
-                            	<?php _e('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas ornare elit ut molestie. Phasellus posuere interdum tellus, sit amet interdum lectus rutrum at. Nunc suscipit erat ut eros consequat, at bibendum sapien convallis. Donec ut gravida velit. Curabitur non ultrices lorem. Quisque aliquet leo felis, vitae posuere purus blandit vitae.','nature-one'); ?>
-                            <?php } ?>
-                    </blockquote>
-                </div><!-- footer-column --><div class="clear"></div>
-            </div><!-- middle-align -->
-        </div><!-- footer-top -->
+        font-weight: bold;
+        text-align: center;
+    }
+
+</style>
+ 
+  <div id="footer">
+        <div class="footer-top">
+                    <div class="social_icons" style=" position:relative !important; z-index:1000 !important; margin-top: -20px !important; ">
+                        <div class="icon-cont" style="position:relative; z-index: 1500 !important; background: url(/iconbg.png) repeat; height:6%;">
+                            
+                           <a href="#"> <img src="/fbblack.png" onmouseover=src="/fbblue.png" onmouseout=src="/fbblack.png" width="37px" height="37px" style="padding-left: 30px; padding-top:5px;"> </a>
+                               
+                           <a href="#"> <img src="/gogplusblack.png" onmouseover=src="/gogplusred.png" onmouseout=src="/gogplusblack.png" width="37px" height="37px" style="padding-left: 30px;  padding-top:5px;"></a>
+
+
+                           <a href="#"> <img src="/instablack.png" onmouseover=src="/instapurple.png" onmouseout=src="/instablack.png" width="37px" height="37px" style="padding-left: 30px;  padding-top:5px;"></a>
+
+	
+                           <a href="#"> <img src="/twitblack.png" onmouseover=src="/twitblue.png" onmouseout=src="/twitblack.png" width="37px" height="37px" style="padding-left: 30px;  padding-top:5px;"></a>
+
+                            <a href="#"> <img src="/pinblack.png" onmouseover=src="/pinred.png" onmouseout=src="/pinblack.png" width="37px" height="37px" style="padding-left: 30px;  padding-top:5px;"></a>
+                            
+                          <a href="#"> <img src="/pencilblack.png" onmouseover=src="/pencilblue.png" onmouseout=src="/pencilblack.png" width="37px" height="37px" style="float:right;  padding-top:5px; padding-right:100px;"></a>
+
+                            <div style="float:right; padding-top:10px; padding-right:20px; padding-top: 20px;">
+                                  <img src="/rs.png" >
+                            
+                            </div>
+                        </div>
+                     </div>
+                    <div class="middle-align">
+                        <div class="footer-column">
+                            <div class="foot" style="display:block;"> Our Story </div>
+                                <div  class="foot"> About Us </div>
+                                    <div  class="foot"> Comments and Suggestion </div>
+                                </div><!-- footer-column -->
+                            <div class="footer-column" style="margin-right:0;">
+                            <div class="foot"> Contact Us </div>
+                                <div class="foot"> Shipping and Returns </div>
+                            <div class="foot"> FAQs </div>
+                        </div><!-- footer-column --><div class="clear"></div>
+                    </div><!-- middle-align -->
+                </div><!-- footer-top -->
        
 </div><!-- footer -->
         </div><!-- main-container -->

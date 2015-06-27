@@ -2,7 +2,6 @@
 
 
 <script type="text/javascript" src="js/jquery.js" ></script>
-<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
 <script type="text/javascript" src="js/uiblock.js" ></script>
 
 <?php
@@ -60,35 +59,16 @@ get_header();
 ?>
 
 
-<?php // get_footer(); ?>
-<style> 
-    
-   .foot{
+<?php get_footer(); ?>
 
-        font-weight: bold;
-        text-align: center;
-        font-size: 12px !important;
-    }
 
-</style>
 
- <div id="footer">
- 		<div class="footer-top">
-        	<div class="middle-align">
-            	<div class="footer-column">
-                    <div class="foot" style="display:block;"> Our Story </div>
-                    <div  class="foot"> About Us </div>
-                     <div  class="foot"> Comments and Suggestion </div>
-                	</div><!-- footer-column -->
-                <div class="footer-column" style="margin-right:0;">
-                    <div class="foot"> Contact Us </div>
-                	<div class="foot"> Shipping and Returns </div>
-                    <div class="foot"> FAQs </div>
-                </div><!-- footer-column --><div class="clear"></div>
-            </div><!-- middle-align -->
-        </div><!-- footer-top --> 
-</div><!-- footer -->
-      
+
+
+        </div><!-- main-container -->
+ 
+
+
     <style>    
         .add_to_cart_inline span, .add_to_cart_inline small {display:none}
 
@@ -144,7 +124,7 @@ get_header();
     $.blockUI.defaults.css.backgroundColor = "none";
   
         
-        $('#menu-item-37').click(function() { 
+        $('.menu-item-37').click(function() { 
              $("#load_content_overlay").css("visibility","visible");
            // $.blockUI({ message: $('#load_content_overlay')  ,css:{visibility: 'visible'}});
              $('#int-div').block({ message:  $('#load_content_overlay')  }); 
@@ -163,7 +143,7 @@ get_header();
         }); 
     */
 
-        $('#menu-item-37').click(function() { 
+        $('.page-item-8').click(function() { 
             $('.site-main').block({ 
                 message: '<h1>Processing</h1>', 
                 css: { border: '3px solid #a00' } 

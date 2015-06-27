@@ -117,7 +117,7 @@
 	<?php } ?>
 
 <div class="header">
-            		<div class="header-inner">
+            		<div class="header-inner" style="width:1040px !important;">
                     		<div class="logo">
                             		<a href="<?php echo esc_url(home_url('/')); ?>">
                                     	<?php if( of_get_option( 'logo', true ) != '' ) { 

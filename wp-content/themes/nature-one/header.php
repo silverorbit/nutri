@@ -1,12 +1,3 @@
-<style>
-
-.header .header-inner {
-
-    width:1040px !important;
-
-}
-
-</style>
 <?php
 /**
  * The Header for our theme.
@@ -126,7 +117,7 @@
 	<?php } ?>
 
 <div class="header">
-            		<div class="header-inner" style="width:1140px !important;">
+            		<div class="header-inner" >
                     		<div class="logo">
                             		<a href="<?php echo esc_url(home_url('/')); ?>">
                                     	<?php if( of_get_option( 'logo', true ) != '' ) { 

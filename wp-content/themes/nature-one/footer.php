@@ -26,8 +26,8 @@
 
    .icon-cont .divimg
     {
-        width: auto  !important; 
-        height: 90% !important;
+        width: 2.4%  !important; 
+        height: 92% !important;
         padding-left: 30px; 
         padding-top:3px; 
     }

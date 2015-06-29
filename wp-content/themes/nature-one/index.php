@@ -82,9 +82,9 @@ get_header();
                             ul.products{float: left !important; width: 70% !important; top: 90px; left: 90px;  };
                             li.products{left: 70px;};
                      </style>
-                <table  width="2000px"> 
+                <table  width="320%"> 
                     <tr  >
-                        <td width="30%" style="float:right; text-align: right;";>
+                        <td width="10%" style="float:right; text-align: right;";>
                         <div class="nav menu" style="font-size: 20px; padding-right:120px; padding-bottom:10px;">
                          <a href="#"> Shakes </a>
                         </div>
@@ -93,7 +93,7 @@ get_header();
                         </div>
                         </td>
 
-                       <td width="70%"; style="font-size: 14px !important; text-align: center;  ">
+                       <td width="90%"; style="font-size: 14px !important; text-align: center;  ">
                       
                                       
                         
